@@ -44,26 +44,6 @@ parser.add_argument('--val-path', type=str, default=None,
 
 
 
-parser.add_argument('--learning-rate', type=float,
-					dest='learning_rate', help='Learning rate',
-					default=1e-4)
-parser.add_argument('--lr-decay', type=float,
-					dest='lr_decay', help='Learning rate decay',
-					default=0)
-parser.add_argument('--max-iter', type=int,
-					dest='max_iter', help='Max # of training iterations',
-					default=16000)
-
-parser.add_argument('--save-iter', type=int,
-					dest='save_iter', help='Checkpoint save frequency',
-					default=200)
-parser.add_argument('--summary-iter', type=int,
-					dest='summary_iter', help='Summary write frequency',
-					default=20)
-parser.add_argument('--max-to-keep', type=int,
-					dest='max_to_keep', help='Max # of checkpoints to keep around',
-					default=10)
-
 args = parser.parse_args()
 
 
